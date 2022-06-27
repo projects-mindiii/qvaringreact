@@ -1,0 +1,107 @@
+section.IndexPageBG {
+    background-image: url(../../assets/images/indexBG.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 35px 0;
+    position: relative;
+}
+.homeRchrgTypeSec {
+    box-shadow: 0px 3px 28px 0px rgb(130 130 130 / 15%);
+    max-width: 700px;
+    width: 100%;
+    margin: 0px auto 0;
+    padding: 50px 50px;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 17;
+    border-radius: 25px;
+    background: #000000a8;
+}
+.qv_banner_text {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.qv_banner_text h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #fff;
+}
+.qv_banner_text p {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto 0;
+    line-height: 30px;
+    color: #fff;
+}
+.qv_operator_section {
+    margin-top: 22px;
+}
+.qvIndexOperatorSec .qv_operator_section .form-group {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rechargeType label {
+    margin: 0px 14px 25px;
+}
+input[type="radio"] {
+    appearance: none;
+    border: none;
+    padding: 0;
+}
+.radioPaymnt input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.qvIndexOperatorSec .radioPaymnt .recharge_type {
+    min-width: 270px;
+}
+.radioPaymnt .recharge_type {
+    display: inline-block;
+    padding: 30px 20px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #666!important;
+    cursor: pointer;
+    min-width: 265px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+}
+.recharge_type p {
+    font-size: 19px;
+    color: #272727;
+    font-weight: 500;
+    margin: 0;
+}
+.recharge_type span {
+    background-color: #574adf;
+    color: #fff;
+    padding: 5px 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.radioPaymnt input:checked+.recharge_type {
+    border: 3px solid #8dd0ff;
+}
+.radioPaymnt input:checked+.recharge_type h5 {
+    color: #272727!important;
+}
+.qv_operator_section h5 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 13px;
+}
+sub, sup {
+    vertical-align: initial !important;
+}
