@@ -37,14 +37,35 @@ section.IndexPageBG {
     line-height: 30px;
     color: #fff;
 }
-.qv_operator_section {
-    margin-top: 22px;
+.homeMobileInput input {
+    border-radius: 20px!important;
+    background-color: #ffffff !important;
+    box-shadow: 0px 9px 20px 0px rgb(130 130 130 / 12%) !important;
+    border: 1px solid #efefef !important;
+    width: 100% !important;
+    height: 80px !important;
+}
+.react-tel-input .flag-dropdown {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    border-radius: 20px;
+    border-right: none;
+}
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus {
+    background-color: #fff0;
 }
 .qvIndexOperatorSec .qv_operator_section .form-group {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.qvIdexMobileBox {
+    padding: 0 10px;
 }
 .rechargeType label {
     margin: 0px 14px 25px;
@@ -104,4 +125,288 @@ input[type="radio"] {
 }
 sub, sup {
     vertical-align: initial !important;
+}
+
+.selectOffer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.selectOffer img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 999;
+    left: 7px;
+    top: 4px;
+}
+.selectOffer:after {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    background: #5350dd;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    z-index: 0;
+}
+.qv_operator_box {
+    padding: 30px 20px 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+}
+.qv_operator_box img {
+    width: 150px;
+}
+img {
+    max-width: 100%;
+}
+.selectOffer img {
+    width: 100%;
+}
+.qvSelectOperator p {
+    padding-top: 15px;
+}
+.qvIndexOperatorTypes label {
+    margin: 0 0 5px;
+    width: 50%;
+}
+h3.qv_heading1 {
+    color: #fff;
+    text-align: left;
+    margin: 10px 0;
+}
+.qv_operator_btn a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    background-image: linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
+    background-image: -webkit-linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
+    background-image: -ms-linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
+    min-width: 180px;
+}
+::placeholder{
+    color: #272727;
+}
+.qv_operator_btn a:hover{
+    color: #fff;
+}
+.qv_operator_btn {
+    margin-top: 50px;
+}
+.title-heading {
+    margin-bottom: 0;
+    font-size: 31px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #333;
+}
+.app-download-content .btn-box {
+    margin-top: 25px;
+}
+.app-download-content .btn-box .app-store-btn {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.app-download-content .btn-box .app-store-btn {
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    padding: 8px 40px 8px 60px;
+    font-size: 12px;
+}
+
+.app-download-content .btn-box .play-store-btn span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+.app-download-content .btn-box .app-store-btn span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+.app-download-content .btn-box .app-store-btn i, .app-download-content .btn-box .play-store-btn i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.app-download-content .btn-box .play-store-btn {
+    margin-left: 12px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    padding: 8px 30px 8px 60px;
+    font-size: 12px;
+}
+.app-download-content .btn-box .play-store-btn {
+    color: #338dcf;
+    font-size: 12px;
+}
+.app-download-content .btn-box .app-store-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-image: -webkit-linear-gradient( 180deg, #2e91da 0%, #2c87ca 88%);
+}
+.app-download-content .btn-box .app-store-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: -1;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    border: 2px solid #338dcf;
+}
+.app-download-content .btn-box .play-store-btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: -1;
+    background: linear-gradient(90deg, #2c87ca 0%, #2e90d9 100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.app-download-content .btn-box .play-store-btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    z-index: -1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #fff;
+    border: 2px solid;
+}
+a.play-store-btn.store_btn:hover {
+    color: #fff;
+}
+.app-download-content .btn-box .play-store-btn:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.app-download-content .btn-box .play-store-btn:hover::after {
+    opacity: 0;
+    visibility: hidden;
+}
+a.app-store-btn.store_btn:hover {
+    color: #338dcf;
+}
+.app-download-content .btn-box .app-store-btn:hover::before {
+    opacity: 0;
+    visibility: hidden;
+}
+.app-download-content .btn-box .app-store-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+.app-download-content .btn-box .app-store-btn i::before, .app-download-content .btn-box .play-store-btn i::before {
+    font-size: 35px;
+}
+.app-download-content {
+    padding: 50px 0;
+}
+.footer-area {
+    background-color: #1c2031;
+    color: #a9a9aa;
+    padding: 20px 0;
+}
+.social-links-footer {
+    margin-bottom: 12px;
+}
+.footer-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.social-links-footer li {
+    display: inline-block;
+    margin: 0 3px;
+}
+.social-links-footer li a {
+    display: inline-block;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    margin-right: 5px;
+}
+.social-links-footer li a:last-child {
+    margin-right: 0px;
+}
+.social-links-footer li a.fcbook:hover {
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+.social-links-footer li a.twter:hover {
+    background-color: #03a9f4;
+    border-color: #03a9f4;
+}
+.ftLink a {
+    color: #fff;
+    margin: 0 6px;
+    text-decoration: none;
+}
+p.ftLink {
+    margin: 5px 0;
+}
+a:hover {
+    text-decoration: none;
+}
+/* ============ */
+
+.HomeSecChange {
+    display: none;
+}
+.HomeSecHide {
+    display: none;
+}
+.HomeSecHide.HomeSecShow {
+    display: block;
 }

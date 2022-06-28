@@ -13,7 +13,7 @@ function routes() {
 
 	return (
        <>
-         <Header />
+         <Header/>
 		<Router> 
             <Switch>
             <Route exact path="/" component={Home}/>
