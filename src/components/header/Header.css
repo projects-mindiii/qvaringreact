@@ -6,7 +6,17 @@ p{
 }
 .qv_home_wrapper {
     background-image: linear-gradient( 180deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
-    padding: 30px 0 24px;
+    padding: 20px 0 24px;
+}
+.navbar a.nav-link {
+    align-items: center;
+    display: flex;
+}
+/* a.qv_noti_section {
+    border-right: 1px solid white;
+} */
+a.qv_noti_section:last-child {
+    border-right: none;
 }
 .navMenu a {
     color: rgb(255 255 255)!important;
@@ -20,7 +30,7 @@ p{
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -46px;
+    bottom: -50px;
     width: 100%;
     height: 100%;
     margin: auto;
@@ -36,6 +46,9 @@ p{
 }
 .navbar-light .navbar-toggler {
     border-color: #ffffff00;
+}
+a.qv_noti_section img {
+    padding-right: 4px;
 }
 /* =========Advertisment========== */
 .qvAdvertisment {
@@ -60,11 +73,66 @@ p{
     color: #222;
 }
 
-/* ==========Responsive CSS=========== */
+.prfle_logout ul li img {
+    max-width: 27px;
+    border: 1px solid #6265ac;
+    border-radius: 50%;
+}
+.qv_noti_section span {
+    color: #fff !important;
+}
 
+span.noti-count {
+    position: absolute;
+    color: #fff;
+    background: red;
+    top: 0px;
+    padding: 0px 5px;
+    border-radius: 50px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    transform: translate(8px, 5px);
+}
+button#dropdown-basic {
+    background: no-repeat;
+    border: none;
+    font-size: 0px;
+    padding: 0;
+    margin: 0;
+}
+.dropdown img {
+    width: 25px;
+}
+.dropdown a {
+    color: #222 !important;
+    padding: 5px 10px;
+}
+/* .navbar.is-sticky {
+    position: fixed!important;
+    background-image: -webkit-linear-gradient( 180deg,rgb(89,70,224) 0%,rgb(51,141,207) 88%);
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+} */
+
+/* ==========Responsive CSS=========== */
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -30px;
+}
+}
 @media screen and (max-width: 992px) {
     .navMenu a.active::after{
         display: none;
+    }
+    .navbar a.nav-link {
+        padding: 10px 20px;
+    }
+    span.noti-count {
+        transform: translate(8px, 0px);
     }
     .me-auto.navMenu.navbar-nav {
         border: 1px solid #3784d0;

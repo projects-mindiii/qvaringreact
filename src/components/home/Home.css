@@ -1,3 +1,6 @@
+a {
+    text-decoration: none;
+}
 section.IndexPageBG {
     background-image: url(../../assets/images/indexBG.webp);
     background-repeat: no-repeat;
@@ -398,6 +401,31 @@ p.ftLink {
 }
 a:hover {
     text-decoration: none;
+}
+.homeBackBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.homeBackBtn button {
+    background: no-repeat;
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+.react-tel-input .form-control {
+    font-size: 18px;
+    padding-left: 60px !important;
+}
+.react-tel-input .selected-flag {
+    padding: 0 0 0 20px;
+}
+.react-tel-input .selected-flag .arrow {
+    margin-top: -3px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #a2a0ff;
 }
 /* ============ */
 

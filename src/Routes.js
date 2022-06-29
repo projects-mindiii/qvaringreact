@@ -6,19 +6,21 @@ import {
   } from "react-router-dom";
   
 import Home from './components/home/Home.js';
+import Recharge from './components/recharge/Recharge.js';
 import Header from './components/header/Header.js';
 
 
 function routes() {
 
 	return (
-       <>
-         <Header/>
-		<Router> 
-            <Switch>
-            <Route exact path="/" component={Home}/>
-            </Switch>
-		</Router>
+       <>       
+          <Router> 
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/recharge">
+              <Header/>
+              <Recharge />
+            </Route>
+          </Router>
        </>
 	);
 };

@@ -1,0 +1,248 @@
+.qv_recharge_section {
+    border-radius: 20px;
+    box-shadow: 0 3px 28px 0 rgb(130 130 130 / 15%);
+    max-width: 1010px;
+    width: 100%;
+    margin: -120px auto 0;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+}
+h5.qv_heading_two {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+}
+.qv_operator_select {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #efefef;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(130 130 130 / 12%);
+    padding: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.qv_operator_select_img {
+    position: relative;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+.qv_operator_select_img:after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 0;
+    transform: translateY(-10px);
+    width: 1px;
+    height: 60px;
+    background: #ebebeb;
+}
+.qv_operator_select span {
+    color: #aeaeae;
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+}
+.qv_operator_box {
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.qv_recharge_left_sec .qv_operator_box {
+    text-align: center;
+    padding: 20px 30px;
+    position: relative;
+}
+.qv_operator_box, .qv_operator_mobile_no {
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 9px 20px 0 rgb(130 130 130 / 12%);
+    border: 1px solid #efefef;
+}
+.qv_recharge_left_sec .qv_operator_box h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.qv_recharge_left_sec .qv_operator_box p {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.qv_recharge_left_sec .qv_operator_box:after {
+    content: "";
+    position: absolute;
+    bottom: 65px;
+    width: 100%;
+    height: 1px;
+    background: #ebe9e9;
+    left: 0;
+}
+.qv_recharge_schedule input[type="radio"] {
+    border: 1px solid #bcbcbc;
+}
+.react-tel-input .form-control {
+    font-size: 18px;
+    padding-left: 60px !important;
+    width: 100%;
+    background: none;
+    border: none;
+}
+.qv_operator_mobile_no {
+    padding: 20px;
+    margin: 30px 0;
+}
+.react-tel-input .flag-dropdown {
+    border: none;
+}
+.react-tel-input .country-list {
+    text-align: left;
+    width: 480px;
+}
+
+element.style {
+}
+.radioPaymnt input:checked+.recharge_type {
+    border: 3px solid #8dd0ff;
+}
+.radioPaymnt .recharge_type {
+    min-width: 203px;
+    padding: 10px 20px 15px;
+}
+.qv_recharge_all_plans_heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f1;
+    margin: 0 -10px 20px;
+    padding: 0 20px 10px;
+    flex-wrap: wrap;
+}
+.qv_recharge_left_sec .recharge_type p {
+    font-size: 16px;
+}
+.qv_recharge_all_plans_heading h5 {
+    color: #9f9f9f;
+    font-size: 15px!important;
+}
+p.light_text {
+    color: #9f9f9f;
+    font-size: 15px!important;
+    font-weight: 400;
+    text-align: left;
+    line-height: 26px;
+}
+.qv_recharge_right_section li {
+    margin-bottom: 25px;
+}
+.qv_recharge_coupon_box {
+    display: flex;
+    background: #f5f8fd;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: baseline;
+    position: relative;
+}
+.qv_recharge_coupon_box span {
+    margin-right: 15px;
+}
+h6.blue_text {
+    color: #5350dd;
+}
+.qv_recharge_coupon_box button {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    padding: 0;
+}
+button {
+    border: none;
+    background: 0 0;
+}
+h6.green_text {
+    color: #11ad4f;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+.qv_recharge_coupon_box i {
+    color: #999;
+    font-size: 20px;
+}
+.qv_recharge_coupon_text p {
+    color: #8282a2;
+}
+.qv_recharge_coupon_text {
+    text-align: left;
+    margin-right: 20px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.qv_recharge_order_box, .qv_recharge_order_total {
+    border: 1px solid #efefef;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 9px 20px 0 rgb(130 130 130 / 12%);
+    padding: 10px 20px;
+    position: relative;
+    text-align: left;
+}
+.qv_recharge_order_box h5 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 0;
+}
+.qv_recharge_order_box p {
+    font-size: 16px;
+    color: #828282;
+    line-height: 32px;
+}
+.qv_recharge_order_box span {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #eb4945;
+    font-size: 20px;
+    cursor: pointer;
+}
+i.fas.fa-trash-alt {
+    color: #ca0909;
+}
+.qv_recharge_order_box h6 {
+    position: absolute;
+    bottom: 22px;
+    right: 20px;
+}
+.qv_recharge_order_total li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.qv_recharge_order_total h6 {
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+}
+.qv_recharge_order_total p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 0;
+}
+h6.red_text, p.red_text {
+    color: #e73838;
+}

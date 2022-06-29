@@ -1,0 +1,24 @@
+.qv_banner_wrapper {
+    text-align: center;
+    padding: 45px 0 160px;
+    color: var(--color-white);
+    background-image: url(../../assets/images/banner-bg.webp);
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+}
+.qv_banner_white_box {
+    background: #fff;
+    padding: 40px 0 20px;
+    margin: 0 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.qv_banner_white_box p {
+    color: #b9c0ff;
+    line-height: 0;
+    font-size: 22px;
+}
+.qv_banner_white_box img {
+    margin-top: 25px;
+}
