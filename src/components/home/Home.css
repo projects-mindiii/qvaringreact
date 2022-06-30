@@ -41,12 +41,14 @@ section.IndexPageBG {
     color: #fff;
 }
 .homeMobileInput input {
-    border-radius: 20px!important;
     background-color: #ffffff !important;
-    box-shadow: 0px 9px 20px 0px rgb(130 130 130 / 12%) !important;
-    border: 1px solid #efefef !important;
     width: 100% !important;
     height: 80px !important;
+}
+.qvIndexSelectRechNo {
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 .react-tel-input .flag-dropdown {
     position: absolute;
@@ -125,6 +127,7 @@ input[type="radio"] {
     font-size: 26px;
     font-weight: 500;
     margin-top: 13px;
+    position: relative;
 }
 sub, sup {
     vertical-align: initial !important;

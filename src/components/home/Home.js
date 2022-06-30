@@ -3,15 +3,13 @@ import { BsInfoCircleFill } from 'react-icons/bs';
 import { BiArrowBack } from 'react-icons/bi';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import Operator1 from '../../assets/images/operators/operator1.webp';
-import Operator3 from '../../assets/images/operators/operator3.webp';
-import Operator4 from '../../assets/images/operators/operator4.webp';
 import Offer from '../../assets/images/offers.webp';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import { Link, NavLink } from 'react-router-dom';
 import {Container, Button} from 'react-bootstrap';
 import HomeHeader from './homeHeader.js'
+import { HomeHelper } from "../helpers/home";
 import "./Home.css";
 const Home = () =>{
 // creating a state for the section switch
@@ -36,7 +34,7 @@ return(
                <h5>
                   Super Saving
                   <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   overlay={
                   <Tooltip id="button-tooltip-2">Check out this avatar</Tooltip>
                   }
@@ -78,37 +76,18 @@ return(
       <h3 className="qv_heading1">Select Operator</h3>
       <div className="qv_operator_section qvSelectOperator">
          <div className="form-group radioGroup sendType rechargeType qvIndexOperatorTypes">
+         {HomeHelper.Operators.map((Operators, index) => (
             <label className="radioPaymnt">
                <input type="radio" name="transferClientType" value="3" className="required" />
                <div className="qv_operator_box recharge_type">
-                  <img src={Operator1} alt="operators" />
-                  <p>Book Your Recharge</p>
+                  <img src={Operators.operatorImg} alt="Operators" />
+                  <p>{Operators.operatorTxt}</p>
                   <div className="selectOffer">
-                     <img data-bs-toggle="modal" data-bs-target="#referralCode" src={Offer} alt="operators" />
+                     <img src={Offer} alt="Operators" />
                   </div>
                </div>
             </label>
-            <label className="radioPaymnt">
-               <input type="radio" name="transferClientType" value="4" className="required" />
-               <div className="qv_operator_box recharge_type">
-                  <img src={Operator1} alt="operators" />
-                  <p>Recharge Now</p>
-               </div>
-            </label>
-            <label className="radioPaymnt">
-               <input type="radio" name="transferClientType" value="5" className="required" />
-               <div className="qv_operator_box recharge_type">
-                  <img src={Operator3} alt="operators" />
-                  <p>Recharge Amount</p>
-               </div>
-            </label>
-            <label className="radioPaymnt">
-               <input type="radio" name="transferClientType" value="6" className="required" />
-               <div className="qv_operator_box recharge_type">
-                  <img src={Operator4} alt="operators" />
-                  <p>Landline</p>
-               </div>
-            </label>
+            ))}
          </div>
       </div>
    </div>

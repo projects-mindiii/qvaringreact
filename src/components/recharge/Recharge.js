@@ -12,6 +12,7 @@ import RightArrow from '../../assets/images/right_arrow_ico.webp';
 import OperatorIcon from '../../assets/images/operator_icon1.webp'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import {RechargeHelper} from '../helpers/recharge.js'
 import { Link } from 'react-router-dom';
 import {Container, Button, Row, Col} from 'react-bootstrap';
 import Banner from '../commonBanner/Banner.js'
@@ -99,45 +100,22 @@ return(
             </div>
             <div className="qv_recharge_all_plans qv_operator_section">
                <h5 className="qv_heading_two">All Plans</h5>
-               <div className="form-group radioGroup sendType rechargeType">
-                  <label className="radioPaymnt qv_recharge_all_plans_box">
-                     <input type="radio" name="transferClientType" value="3" className="required" />
-                     <div className="recharge_type">
-                        <div className="qv_recharge_all_plans_heading">
-                           <p>$4.99 USD</p>
-                           <h5>250.00 CUP</h5>
-                        </div>
-                        <p className="light_text">Extra Validity Offer!! Just for you! Get 1GB/Day + Unlimited Calls.
-                           Validity:27 Days.
-                        </p>
-                     </div>
-                  </label>
-                  <label className="radioPaymnt qv_recharge_all_plans_box">
-                     <input type="radio" name="transferClientType" value="4" className="required" />
-                     <div className="recharge_type">
-                        <div className="qv_recharge_all_plans_heading">
-                           <p>$4.99 USD</p>
-                           <span>Best Value</span>
-                           <h5>250.00 CUP</h5>
-                        </div>
-                        <p className="light_text">Extra Validity Offer!! Just for you! Get 1GB/Day + Unlimited Calls.
-                           Validity:27 Days.
-                        </p>
-                     </div>
-                  </label>
-                  <label className="radioPaymnt qv_recharge_all_plans_box">
-                     <input type="radio" name="transferClientType" value="5" className="required" checked="" />
-                     <div className="recharge_type">
-                        <div className="qv_recharge_all_plans_heading">
-                           <p>$4.99 USD</p>
-                           <h5>250.00 CUP</h5>
-                        </div>
-                        <p className="light_text">Extra Validity Offer!! Just for you! Get 1GB/Day + Unlimited Calls.
-                           Validity:27 Days.
-                        </p>
-                     </div>
-                  </label>
-               </div>
+               <div className="form-group radioGroup sendType rechargeType">                
+              {RechargeHelper.plans.map((plans, index) => (
+             <label className="radioPaymnt qv_recharge_all_plans_box">
+                <input type="radio" name="transferClientType" value="4" className="required" />
+                <div className="recharge_type">
+                   <div className="qv_recharge_all_plans_heading">
+                      <p>{plans.planPrice}</p>
+                      <span>{plans.planOffer}</span>
+                      <h5>{plans.planReturn}</h5>
+                   </div>
+                   <p className="light_text">{plans.planText}</p>
+                </div>
+             </label>
+             ))}
+             
+          </div>
                <div className="qv_operator_btn">
                   <a href="">Add To Cart</a>
                </div>
@@ -174,66 +152,24 @@ return(
                </ul>
             </div>
             <ul>
+            {RechargeHelper.productTotal.map((productTotal, index) => (
                <li>
                   <div className="qv_recharge_order_box">
-                     <h5>Product - +55 446 659 5856</h5>
-                     <p>Received Amount - $1500.00 CUP</p>
-                     <p>Recharge Amount - $150.00 CUP</p>
-                     <p>Paid Amount - $1400.00 USD</p>
-                     <p>Discount - 15%</p>
+                     <h5>{productTotal.productNo}</h5>
+                     <p>{productTotal.productRecvAmt}</p>
+                     <p>{productTotal.productRchrgAmt}</p>
+                     <p>{productTotal.productPaidAmt}</p>
+                     <p>{productTotal.productDisAmt}</p>
                      <button data-toggle="modal" data-target="#savedCardDelete">
                      <span>
-                     <i className="fas fa-trash-alt"></i>
+                        <i className={`${productTotal.productAccDlt}`}></i>
+                     
                      </span>
                      </button>
-                     <h6 className="blue_text"> Super Saving</h6>
+                     <h6 className="blue_text">{productTotal.productAccType}</h6>
                   </div>
                </li>
-               <li>
-                  <div className="qv_recharge_order_box">
-                     <h5>Product - +55 446 659 5856</h5>
-                     <p>Received Amount - $1500.00 CUP</p>
-                     <p>Recharge Amount - $150.00 CUP</p>
-                     <p>Paid Amount - $1400.00 USD</p>
-                     <p>Discount - 15%</p>
-                     <button data-bs-toggle="modal" data-bs-target="#savedCardDelete">
-                     <span>
-                     <i className="fas fa-trash-alt"></i>
-                     </span>
-                     </button>
-                     <h6 className="blue_text"> Super Saving</h6>
-                  </div>
-               </li>
-               <li>
-                  <div className="qv_recharge_order_box">
-                     <h5>Product - +55 446 659 5856</h5>
-                     <p>Received Amount - $1500.00 CUP</p>
-                     <p>Recharge Amount - $150.00 CUP</p>
-                     <p>Paid Amount - $1400.00 USD</p>
-                     <p>Discount - 15%</p>
-                     <button data-bs-toggle="modal" data-bs-target="#savedCardDelete">
-                     <span>
-                     <i className="fas fa-trash-alt"></i>
-                     </span>
-                     </button>
-                     <h6 className="blue_text"> Super Saving</h6>
-                  </div>
-               </li>
-               <li>
-                  <div className="qv_recharge_order_box">
-                     <h5>Product - +55 446 659 5856</h5>
-                     <p>Received Amount - $1500.00 CUP</p>
-                     <p>Recharge Amount - $150.00 CUP</p>
-                     <p>Paid Amount - $1400.00 USD</p>
-                     <p>Discount - 15%</p>
-                     <button data-bs-toggle="modal" data-bs-target="#savedCardDelete">
-                     <span>
-                     <i className="fas fa-trash-alt"></i>
-                     </span>
-                     </button>
-                     <h6 className="blue_text"> Super Saving</h6>
-                  </div>
-               </li>
+                ))}
             </ul>
             <div className="qv_recharge_order_total">
                <ul>

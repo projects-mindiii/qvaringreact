@@ -60,6 +60,194 @@ p{
     color: #222;
 }
 
+/* ===============Modal CSS Start============== */
+.qv_index_modal .modal-body {
+    padding: 35px 30px 40px;
+    position: relative;
+}
+.qv_login_form {
+    text-align: center;
+}
+.LoginFormWrapper p {
+    max-width: 360px;
+    margin: 15px auto 20px;
+    font-size: 18px;
+    color: #a3a3a3;
+}
+
+.qv_login_form input {
+    height: 50px;
+    margin: 35px auto 40px;
+    width: 400px;
+}
+.qv_operator_btn {
+    margin-top: 25px;
+    text-align: center;
+    margin-left: 15px;
+}
+.qv_operator_btn a, .selectRechargeOperator .modal-footer button {
+    /* background: blue; */
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px !important;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff !important;
+    border-radius: 10px;
+    background-image:linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
+    min-width: 170px;
+}
+.qv_login_form a {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 50px;
+    line-height: 30px;
+}
+
+a.forgot_link {
+    color: #666;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.qv_login_popup_sec {
+    width: 100%;
+}
+.qv_login_popup_sec p {
+    color: #828282;
+    font-weight: 500;
+    font-size: 18px;
+    background: #fff0;
+    position: relative;
+    z-index: 0;
+    margin: 20px 0 0px;
+}
+.qv_login_popup_sec p:before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 12px;
+    background: #d5d5d5;
+    width: 150px;
+    height: 1px;
+    z-index: 1007;
+}
+.qv_sign_up_link button {
+    color: #4b62da;
+    font-weight: 600;
+    padding: 0;
+}
+.qv_login_popup_sec ul li a {
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+}
+.qv_login_popup_sec p:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    background: #d5d5d5;
+    width: 150px;
+    height: 1px;
+    z-index: 1007;
+}
+.qv_login_popup_sec ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 3px;
+}
+.qv_login_popup_sec ul li {
+    margin-right: 7px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100px;
+}
+.qv_login_popup_sec ul li:first-child {
+    background: #3b5998;
+}
+.qv_login_popup_sec ul li:nth-child(2) {
+    background: #252836;
+}
+.qv_login_popup_sec ul li:nth-child(3) {
+    background: #eb4132;
+}
+.LoginPhoneInput input {
+    border: 1px solid #ced4da!important;
+    height: 50px !important;
+    background: white !important;
+}
+.LoginPhoneInput {
+    margin-top: 30px;
+}
+
+.LoginPhoneInput .flag-dropdown {
+    background-color: #ffffff00 !important;
+}
+
+.qv_sign_up_link p:before, .qv_sign_up_link p:after{
+    display: none;
+}
+
+.qvCodeConfirmationInput {
+    display: flex;
+    justify-content: center;
+}
+.qvCodeConfirmationInput input {
+    max-width: 55px;
+    border-radius: 5px;
+    margin: 20px 15px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #efefef;
+}
+.qv_confirmation_code {
+    margin-top: 20px;
+}
+.imagePreview{
+    background-image: url('../../assets/images/placeholder_img.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    position: relative;
+}
+.profileImg{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.qvBBasicInfoRow input {
+    margin-bottom: 10px !important;
+}
+.qvBBasicInfoRow input {
+    margin-bottom: 10px !important;
+}
+
+.qvProfileGender {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.qvProfileGender .form-check.form-check-inline {
+    display: flex;
+}
+
+.qvProfileGender input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    margin: 0 !important;
+    margin-right: 5px !important;
+}
+
 /* ==========Responsive CSS=========== */
 
 @media screen and (max-width: 992px) {

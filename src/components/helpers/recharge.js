@@ -9,11 +9,12 @@
 // import ActiveMenu4 from '../img/a_menu_icon4.png';
 // import ActiveMenu5 from '../img/a_menu_icon5.png';
 
-class RechargeHelper {
+export class RechargeHelper {
 	static plans = [
 		{
 			planPrice : '$4.99 USD',
 			planReturn: '250.00 CUP',
+			planOffer : 'Best Value',
 			planText  : 'Extra Validity Offer!! Just for you! Get 1GB/Day + Unlimited Calls. Validity:27 Days.',
 		},
 
@@ -27,10 +28,43 @@ class RechargeHelper {
 		{
 			planPrice : '$4.99 USD',
 			planReturn: '250.00 CUP',
+			planOffer : 'Best Value',
 			planText  : 'Extra Validity Offer!! Just for you! Get 1GB/Day + Unlimited Calls. Validity:27 Days.',
+		},
+
+	];
+
+	static productTotal  = [
+		{
+			productNo : 'Product - +55 446 659 5856',
+			productRecvAmt: 'Received Amount - $1500.00 CUP',
+			productRchrgAmt: 'Recharge Amount - $150.00 CUP',
+			productPaidAmt: 'Paid Amount - $1400.00 USD',
+			productDisAmt: 'Discount - 15%',
+			productAccType:'Super Saving',
+			productAccDlt:'fas fa-trash-alt',
+		},
+
+		{
+			productNo : 'Product - +55 446 659 5856',
+			productRecvAmt: 'Received Amount - $1500.00 CUP',
+			productRchrgAmt: 'Recharge Amount - $150.00 CUP',
+			productPaidAmt: 'Paid Amount - $1400.00 USD',
+			productDisAmt: 'Discount - 15%',
+			productAccType:'Super Saving',
+			productAccDlt:'fas fa-trash-alt',
+		},
+
+		{
+			productNo : 'Product - +55 446 659 5856',
+			productRecvAmt: 'Received Amount - $1500.00 CUP',
+			productRchrgAmt: 'Recharge Amount - $150.00 CUP',
+			productPaidAmt: 'Paid Amount - $1400.00 USD',
+			productDisAmt: 'Discount - 15%',
+			productAccType:'Super Saving',
+			productAccDlt:'fas fa-trash-alt',
 		},
 
 	];
 }
 
-export default RechargeHelper;
