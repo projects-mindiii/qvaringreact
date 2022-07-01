@@ -1,15 +1,7 @@
-// import Menu1 from '../img/menu_icon1.png';
-// import Menu2 from '../img/menu_icon2.png';
-// import Menu3 from '../img/menu_icon3.png';
-// import Menu4 from '../img/menu_icon4.png';
-// import Menu5 from '../img/menu_icon5.png';
-// import ActiveMenu1 from '../img/a_menu_icon1.png';
-// import ActiveMenu2 from '../img/a_menu_icon2.png';
-// import ActiveMenu3 from '../img/a_menu_icon3.png';
-// import ActiveMenu4 from '../img/a_menu_icon4.png';
-// import ActiveMenu5 from '../img/a_menu_icon5.png';
+
 
 export class RechargeHelper {
+	// ===========Recharge Plans=============
 	static plans = [
 		{
 			planPrice : '$4.99 USD',
@@ -34,6 +26,7 @@ export class RechargeHelper {
 
 	];
 
+	// ===========Total Product=============
 	static productTotal  = [
 		{
 			productNo : 'Product - +55 446 659 5856',
@@ -63,6 +56,30 @@ export class RechargeHelper {
 			productDisAmt: 'Discount - 15%',
 			productAccType:'Super Saving',
 			productAccDlt:'fas fa-trash-alt',
+		},
+
+	];
+
+	// ===========Coupon Code Apply=============
+
+	static rechargeCouponCode  = [
+		{
+			rchrgCouponOffer : 'Flat $100 Saving',
+			rchrgCouponTxt : 'Contrary to popular belief, Lorem Ipsum is not simply random known took.',
+			rchrgCouponValidDate: 'Valid Date : 10/03/2022',
+			rchrgCouponBtn: 'Apply',
+		},
+		{
+			rchrgCouponOffer : 'Flat $800 Saving',
+			rchrgCouponTxt : 'Contrary to popular belief, Lorem Ipsum is not simply random known took.',
+			rchrgCouponValidDate: 'Valid Date : 10/03/2022',
+			rchrgCouponBtn: 'Apply',
+		},
+		{
+			rchrgCouponOffer : 'Flat $500 Saving',
+			rchrgCouponTxt : 'Contrary to popular belief, Lorem Ipsum is not simply random known took.',
+			rchrgCouponValidDate: 'Valid Date : 10/03/2022',
+			rchrgCouponBtn: 'Apply',
 		},
 
 	];

@@ -1,0 +1,172 @@
+.qv_history_wrapper {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    margin-top: -100px;
+}
+.qv_history_recharge_search {
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 9px 20px 0px rgb(130 130 130 / 12%);
+    padding: 30px 30px;
+    margin-top: 35px;
+}
+.qv_history_wrapper .nav-tabs .nav-link:focus, .qv_history_wrapper .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+.qv_history_wrapper ul.nav-tabs {
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 9px 20px 0px rgb(130 130 130 / 12%);
+    padding: 15px 30px;
+    justify-content: space-around;
+}
+
+.qv_history_wrapper .nav-link {
+    color: #939393 !important;
+    font-size: 22px;
+}
+
+.qv_history_wrapper .nav-link.active {
+    color: #466ad7 !important;
+    position: relative;
+    border: none;
+}
+
+.qv_history_wrapper .nav-link.active:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 70px;
+    height: 4px;
+    background: #4d5ddb;
+    border-radius: 50px;
+}
+
+.qv_history_recharge_search input {
+    width: 100%;
+    border-radius: 50px;
+    height: 50px;
+    background: whitesmoke;
+    border: 1px solid #edecec;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.qv_history_recharge_search a {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    transform: translate(-20px, 8px);
+    z-index: 999;
+    color: #6a6a6a;
+    font-size: 22px;
+}
+
+.qv_history_recharge_search form {
+    position: relative;
+}
+
+.qv_history_recharge_box {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(234, 234, 234);
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 7%);
+    padding: 30px;
+}
+
+.qv_history_recharge_info {
+    display: flex;
+    position: relative;
+}
+
+.qv_history_recharge_icon {
+    margin-right: 7px;
+}
+.qv_history_recharge_name h5 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.qv_history_recharge_name p {
+    color: #828282;
+    font-size: 15px;
+    line-height: 25px;
+}
+.qv_recharge_pain_amt {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.qv_recharge_pain_amt h3 {
+    color: #338ecf;
+    font-size: 18px;
+    font-weight: 500;
+}
+.qv_recharge_type {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.qv_history_status_sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #efefef;
+    margin-top: 20px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.qv_history_status h5 {
+    font-size: 17px;
+    color: #828282;
+}
+.qv_history_status .cancel {
+    color: #f31a38;
+}
+.qv_history_status_rpt button {
+    color: #2054cf;
+    border: 2px solid #2054cf;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+span.pending {
+    color: #ef9b00;
+}
+span.success {
+    color: #00a131;
+}
+.qv_history_recharge_name {
+    text-align: left;
+}
+.qv_history_wrapper ul {
+    margin-top: 45px;
+}
+.qv_history_wrapper li {
+    margin-bottom: 25px;
+}
+.qv_history_wrapper li.nav-item {
+    margin: 0;
+}
+.view_more_btn button {
+    color: #338ecf;
+    font-weight: 500;
+    font-size: 20px;
+    background: #cceaff;
+    border-radius: 7px;
+    padding: 10px 20px;
+}
+.qv_history_sms_dlt {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+.qvSMSHistoryTab ul {
+    margin-top: 0px;
+}

@@ -1,3 +1,24 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 15px #387cf1;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    border-radius: 10px;
+}
+.homeMobileInput .react-tel-input .country-list {
+    width: 575px;
+    border-radius: 15px;
+}
+.homeMobileInput .react-tel-input .flag-dropdown.open {
+    z-index: 2;
+    background: #fff;
+    border-radius: 15px;
+}
 a {
     text-decoration: none;
 }
@@ -43,7 +64,8 @@ section.IndexPageBG {
 .homeMobileInput input {
     background-color: #ffffff !important;
     width: 100% !important;
-    height: 80px !important;
+    height: 60px !important;
+    border-radius: 15px !important;
 }
 .qvIndexSelectRechNo {
     padding: 0 !important;
@@ -71,6 +93,10 @@ section.IndexPageBG {
 }
 .qvIdexMobileBox {
     padding: 0 10px;
+    margin-top: 30px;
+}
+.qvIndexSelectRechNo {
+    margin: 20px 0;
 }
 .rechargeType label {
     margin: 0px 14px 25px;
@@ -85,7 +111,6 @@ input[type="radio"] {
     opacity: 0;
     z-index: -1;
 }
-
 .qvIndexOperatorSec .radioPaymnt .recharge_type {
     min-width: 270px;
 }
@@ -117,8 +142,9 @@ input[type="radio"] {
     font-size: 13px;
     font-weight: 500;
 }
-.radioPaymnt input:checked+.recharge_type {
-    border: 3px solid #8dd0ff;
+.qvIndexOperatorSec .radioPaymnt input:checked+.recharge_type {
+    border: 5px solid #6f6cff;
+    box-shadow: 0px 0px 10px #000000;
 }
 .radioPaymnt input:checked+.recharge_type h5 {
     color: #272727!important;
@@ -185,9 +211,9 @@ img {
 h3.qv_heading1 {
     color: #fff;
     text-align: left;
-    margin: 10px 0;
+    margin: 10px 0 0;
 }
-.qv_operator_btn a {
+.qv_operator_btn a, .modal-footer button.btn.btn-primary  {
     display: inline-block;
     text-align: center;
     padding: 14px 20px;
@@ -197,9 +223,9 @@ h3.qv_heading1 {
     color: #fff;
     border-radius: 10px;
     background-image: linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
-    background-image: -webkit-linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
     background-image: -ms-linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
     min-width: 180px;
+    cursor: pointer;
 }
 ::placeholder{
     color: #272727;
@@ -421,8 +447,9 @@ a:hover {
     font-size: 18px;
     padding-left: 60px !important;
 }
-.react-tel-input .selected-flag {
-    padding: 0 0 0 20px;
+.homeMobileInput .react-tel-input .selected-flag {
+    padding: 0 0 0 12px;
+    border-radius: 15px;
 }
 .react-tel-input .selected-flag .arrow {
     margin-top: -3px;
@@ -440,4 +467,6 @@ a:hover {
 }
 .HomeSecHide.HomeSecShow {
     display: block;
+    position: relative;
+    overflow: unset;
 }

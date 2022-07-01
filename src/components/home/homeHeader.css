@@ -208,18 +208,22 @@ a.forgot_link {
 .qv_confirmation_code {
     margin-top: 20px;
 }
+.basicInfoProfile {
+    margin-top: 30px;
+}
 .imagePreview{
     background-image: url('../../assets/images/placeholder_img.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border-radius: 50px;
+    border-radius: 150px;
     position: relative;
 }
-.profileImg{
+.profileImg {
     position: absolute;
     left: 0;
     top: 0;
+    border-radius: 150px;
 }
 .qvBBasicInfoRow input {
     margin-bottom: 10px !important;
@@ -243,9 +247,28 @@ a.forgot_link {
 .qvProfileGender input {
     width: 20px;
     height: 20px;
-    border: 1px solid gray;
+    border: 1px solid gray !important;
     margin: 0 !important;
     margin-right: 5px !important;
+}
+.qv_index_modal .modal-content {
+    position: relative;
+    z-index: 0;
+}
+.qv_index_modal .modal-content:before {
+    content: url(../../assets/images/login_bg.webp);
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    z-index: -1;
+}
+.qvCodeConfirmationInput::placeholder {
+    padding-top: 10px !important;
+}
+.react-tel-input.LoginPhoneInput .country-list {
+    width: 435px;
 }
 
 /* ==========Responsive CSS=========== */

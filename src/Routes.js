@@ -7,6 +7,7 @@ import {
   
 import Home from './components/home/Home.js';
 import Recharge from './components/recharge/Recharge.js';
+import History from './components/history/History.js';
 import Header from './components/header/Header.js';
 
 
@@ -19,6 +20,10 @@ function routes() {
             <Route exact path="/recharge">
               <Header/>
               <Recharge />
+            </Route>
+            <Route exact path="/history">
+              <Header/>
+              <History />
             </Route>
           </Router>
        </>

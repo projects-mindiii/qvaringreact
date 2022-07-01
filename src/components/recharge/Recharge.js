@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Form from 'react-bootstrap/Form';
 import { BiArrowBack } from 'react-icons/bi';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Modal from 'react-bootstrap/Modal';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Operator1 from '../../assets/images/operators/operator1.webp';
 import Operator3 from '../../assets/images/operators/operator3.webp';
@@ -19,6 +20,11 @@ import Banner from '../commonBanner/Banner.js'
 import "./Recharge.css";
 const Recharge = () =>{
 const [value, setValue] = useState()
+const [selectOperator, setSelectOperator] = useState(false);
+const [applyCoupon, setApplyCoupon] = useState(false);
+
+const SelectOperator = () => {selectOperator?setSelectOperator(false):setSelectOperator(true)};
+const ApplyCoupon = () => {applyCoupon?setApplyCoupon(false):setApplyCoupon(true)};
 return(
 <>
 <Banner />
@@ -28,7 +34,7 @@ return(
          <Col>
          <div className="qv_recharge_section qv_recharge_left_sec">
             <h5 className="qv_heading_two">Recharge</h5>
-            <div className="qv_operator_select" data-toggle="modal" data-target="#selectRechargeOperator">
+            <div className="qv_operator_select" onClick={SelectOperator}>
                <div className="qv_operator_select_img">
                   <img src={OperatorIcon} />
                </div>
@@ -129,7 +135,7 @@ return(
             <div className="qv_recharge_coupon_code">
                <ul>
                   <li>
-                     <div className="qv_recharge_coupon_box">
+                     <div className="qv_recharge_coupon_box" onClick={ApplyCoupon}>
                         <span><img src={OfferApply} alt="offer-apply" /></span>
                         <div className="qv_recharge_coupon_text">
                            <h6 className="blue_text"> Apply coupon code here</h6>
@@ -199,6 +205,95 @@ return(
       </Row>
    </Container>
 </div>
+
+{/* ===========Select Operator Modal============= */}
+<Modal className="qv_index_modal .modal-body" show={selectOperator} onHide={SelectOperator}>  
+   <Modal.Header closeButton>
+      <Modal.Title>Select Operator</Modal.Title>
+   </Modal.Header>
+  
+   <Modal.Body className="selectRechargeOperatorBody">
+   <Form>
+                {['radio'].map((type) => (
+                    <div className="qv_recharge_schedule" key={`inline-${type}`}>
+                    <div className="qvRchergOprtrSlct">
+                     <img src={Operator1} alt="Operator"/>
+                    <Form.Check
+                        inline
+                        name="group1"
+                        type={type}
+                        id={`inline-${type}-1`}
+                    />
+                    </div>
+                    <div className="qvRchergOprtrSlct">
+                    <img src={Operator3} alt="Operator"/>
+                    <Form.Check
+                        inline
+                        name="group1"
+                        type={type}
+                        id={`inline-${type}-2`}
+                    />
+                    </div>
+                    <div className="qvRchergOprtrSlct">
+                    <img src={Operator4} alt="Operator"/>
+                    <Form.Check
+                        inline
+                        name="group1"
+                        type={type}
+                        id={`inline-${type}-2`}
+                    />
+                    </div>
+                    </div>
+                ))}
+                </Form>
+   </Modal.Body>
+   
+   <Modal.Footer>
+      <Button variant="primary">
+      Done
+      </Button>
+   </Modal.Footer>
+  
+</Modal>
+
+{/* ===========Apply Coupon Modal============= */}
+      <Modal className="qv_index_modal .modal-body" show={applyCoupon} onHide={ApplyCoupon}>  
+         <Modal.Header closeButton>
+            <Modal.Title>Apply Coupon Code</Modal.Title>
+         </Modal.Header>
+      
+         <Modal.Body className="selectRechargeOperatorBody">
+         <div class="apply_coupon_input">
+         <Form>
+            <Form.Group className="" controlId="exampleForm.ControlInput1">
+               <Form.Control type="text" placeholder="Enter Coupon Code" />
+            </Form.Group>
+         </Form>
+         <Button><img src={RightArrow} alt="offer-apply" /></Button>
+         </div>
+         <ul>
+         {RechargeHelper.rechargeCouponCode.map((rechargeCouponCode, index) => (
+            <li>
+               <div class="qv_recharge_order_box apply_coupon_box">
+                  <h5>{rechargeCouponCode.rchrgCouponOffer}</h5>
+                  <p>{rechargeCouponCode.rchrgCouponTxt}</p>
+                  <div class="apply_coupon__btn">
+                     <p>{rechargeCouponCode.rchrgCouponValidDate}</p>
+                     <button>{rechargeCouponCode.rchrgCouponBtn}</button>
+                  </div>    
+               </div>
+            </li>
+         ))}
+         </ul>
+         </Modal.Body>
+         
+         <Modal.Footer>
+            <Button variant="primary">
+            Done
+            </Button>
+         </Modal.Footer>
+      
+      </Modal>
 </>
 );
 };

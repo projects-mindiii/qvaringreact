@@ -7,6 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import { Link } from 'react-router-dom';
 import Advertisment from '../../assets/images/loudspeaker.webp';
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "./homeHeader.css";
@@ -46,7 +47,7 @@ return(
             <Nav className="me-auto navMenu">
                <Nav.Link className="active" exact to="/">Home</Nav.Link>
                <Nav.Link>MEET Qvaring</Nav.Link>
-               <Nav.Link onClick={LoginShow}>Sign IN</Nav.Link>
+               <Nav.Link onClick={LoginShow}>Sign In</Nav.Link>
             </Nav>
          </Navbar.Collapse>
       </Container>
@@ -69,8 +70,8 @@ return(
    <Modal.Body>
       <div className="qv_login_form">
          <div className="LoginFormWrapper">
-            <h3>Log In to your account</h3>
-            <p>Please enter your valid mobile number, to login your account.</p>
+            <h3>Sign In to your account</h3>
+            <p>Please enter your valid mobile number, to signin your account.</p>
          </div>
          <div className="floatLable">
             <PhoneInput className="LoginPhoneInput"
@@ -84,22 +85,22 @@ return(
             />
          </div>
          <div className="qv_operator_btn">
-            <a href="">SIGN IN</a>
+            <Link>SIGN IN</Link>
          </div>
-         <a href="" className="forgot_link">
+         <Link className="forgot_link">
          Forgot Password
-         </a>
+         </Link>
          <div className="qv_login_popup_sec">
             <p>Or Sign in with</p>
             <ul>
                <li>
-                  <a href=""><i className="fab fa-facebook-f"></i></a>
+                  <Link><i className="fab fa-facebook-f"></i></Link>
                </li>
                <li>
-                  <a href=""><i className="fab fa-apple"></i></a>
+                  <Link><i className="fab fa-apple"></i></Link>
                </li>
                <li>
-                  <a href=""><i className="fab fa-google-plus-g"></i></a>
+                  <Link><i className="fab fa-google-plus-g"></i></Link>
                </li>
             </ul>
             <div className="qv_sign_up_link">
@@ -129,7 +130,7 @@ return(
    <Modal.Body>
       <div className="qv_login_form">
          <div className="LoginFormWrapper">
-            <h3>Login or Create your account</h3>
+            <h3>Sign In or Create your account</h3>
             <p>Please enter your valid mobile number, we will send you an OTP to verify</p>
          </div>
          <div className="floatLable">
@@ -144,22 +145,22 @@ return(
             />
          </div>
          <div className="qv_operator_btn">
-            <a onClick={()=>{OtpModule();SignUpShow();}}>Continue</a>
+            <Link onClick={()=>{OtpModule();SignUpShow();}}>Continue</Link>
          </div>
-         <a href="" className="forgot_link">
+         <Link className="forgot_link">
          Forgot Password
-         </a>
+         </Link>
          <div className="qv_login_popup_sec">
             <p>Or Sign in with</p>
             <ul>
                <li>
-                  <a href=""><i className="fab fa-facebook-f"></i></a>
+                  <Link><i className="fab fa-facebook-f"></i></Link>
                </li>
                <li>
-                  <a href=""><i className="fab fa-apple"></i></a>
+                  <Link><i className="fab fa-apple"></i></Link>
                </li>
                <li>
-                  <a href=""><i className="fab fa-google-plus-g"></i></a>
+                  <Link><i className="fab fa-google-plus-g"></i></Link>
                </li>
             </ul>
             <div className="qv_sign_up_link">
@@ -202,11 +203,11 @@ return(
             </div>
          </div>
          <div class="qv_operator_btn">
-            <a onClick={()=>{BasicInfo();OtpModule();}}>Confirm</a>
+            <Link onClick={()=>{BasicInfo();OtpModule();}}>Confirm</Link>
          </div>
-         <a href="" class="forgot_link">
+         <Link class="forgot_link">
          Resend Code
-         </a>
+         </Link>
       </div>
    </Modal.Body>
    {/* 
@@ -253,8 +254,8 @@ return(
             />
             <div className="imagePreview"
             style={{
-            height: "100px",
-            width: "100px",
+            height: "120px",
+            width: "120px",
             border: "1px solid #ccc",
             }}
             onClick={() => imageUploader.current.click()}
@@ -262,8 +263,8 @@ return(
             <img className="profileImg"
             ref={uploadedImage}
             style={{
-            width: "100px",
-            height: "100px"   
+            width: "120px",
+            height: "120px"   
             }}
             />
          </div>
@@ -314,7 +315,7 @@ return(
         </Form>
         </div>
         <div class="qv_operator_btn">
-            <a>Done</a>
+            <Link>Done</Link>
         </div>
       </div>
       </div>

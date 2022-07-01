@@ -110,10 +110,12 @@ h5.qv_heading_two {
     width: 480px;
 }
 
-element.style {
+.qvIndexOperatorSec h3 {
+    padding-left: 20px;
 }
 .radioPaymnt input:checked+.recharge_type {
-    border: 3px solid #8dd0ff;
+    border: 3px solid #6f6cff;
+    box-shadow: none;
 }
 .radioPaymnt .recharge_type {
     min-width: 203px;
@@ -245,4 +247,64 @@ i.fas.fa-trash-alt {
 }
 h6.red_text, p.red_text {
     color: #e73838;
+}
+.qvRchergOprtrSlct img {
+    width: 120px;
+}
+.qvRchergOprtrSlct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+button {
+    outline: none;
+    border: none;
+    background: no-repeat;
+}
+.apply_coupon_input .btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+}
+.apply_coupon_input input {
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    min-width: 380px;
+}
+.apply_coupon_input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.apply_coupon_box h5 {
+    font-size: 19px;
+    color: #333;
+}
+.apply_coupon_box p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.apply_coupon__btn {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ebebeb;
+    padding: 10px 0;
+    margin-top: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.apply_coupon__btn button {
+    color: #4d5ddb;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.selectRechargeOperatorBody.modal-body li {
+    margin-bottom: 25px;
 }
