@@ -1,0 +1,517 @@
+.qvProfileWrapper ul.nav-tabs {
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(130 130 130 / 20%) 0px 0px 20px 0px;
+    padding: 15px;
+    display: block;
+    width: 30%;
+}
+.qv_profile_tab_btns button {
+    display: block;
+    color: #828282 !important;
+    font-weight: 500;
+    padding: 12px;
+}
+.qv_profile_tab_btns .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #e4e7fa;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #4d5ddb !important;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+.qv_profile_tab_btns li.nav-item button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: auto;
+    left: 0;
+    margin: auto;
+    width: 3px;
+    height: 30px;
+    background: #4d5ddb;
+    border-radius: 10px;
+}
+.qvProfileWrapper .tab-content {
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(130 130 130 / 20%) 0px 0px 20px 0px;
+    padding: 15px;
+    max-width: 67%;
+    width: 100%;
+}
+/* ==========Wallet CSS============= */
+.qv_profile_wallet_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+.qv_profile_wallet {
+    display: flex;
+    align-items: center;
+}
+.qv_profile_wallet_info span {
+    background-color: rgb(196, 196, 196);
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    margin: auto;
+    margin-right: 10px;
+    text-align: center;
+}
+.qv_profile_wallet_img img {
+    max-width: 60px;
+}
+.qv_profile_wallet_info h3 {
+    color: #333;
+    font-size: 28px;
+    margin: 5px 0;
+    text-align: left;
+}
+.qv_profile_wallet_info p {
+    color: #aaaaaa;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.qvProfileBtn a {
+    background-image: -webkit-linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    min-width: 170px;
+}
+.qv_profile_wallet_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px 25px;
+}
+.qv_profile_wallet_header h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+.qv_trans_type_date_btn {
+    text-align: center;
+    margin: -20px 0 0;
+}
+.qv_trans_type_date_btn button {
+    background: #e1eef8;
+    color: #338ecf;
+    margin-top: 20px;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #cfe0ed;
+}
+.qv_trans_type_date_wrapper select, .qv_trans_type_date_wrapper input {
+    margin-top: 20px;
+    height: 45px;
+    border-radius: 7px;
+    border: 1px solid #ebebeb;
+    margin: 0px auto 0px;
+    color: gray;
+    padding: 5px 10px 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.qv_trans_type_date_wrapper {
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    padding: 15px;
+}
+.qv_trans_type_date_wrapper label {
+    color: #979797;
+    font-size: 18px;
+}
+.qv_trans_type_date_wrapper Form{
+    text-align: left;
+}
+.qvWalletTransitionTable th {
+    color: #3489cf;
+    border: none;
+    background: #338dcf14;
+}
+.table>:not(caption)>*>* {
+    border-bottom-width: 0px;
+}
+.qvProfileWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -80px;
+}
+.qvWalletTransitionTable span.fas.fa-eye {
+    color: #3489cf;
+}
+
+/* ============================= */
+
+.rechHisIdBlk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rechargeOf {
+    display: flex;
+    align-items: center;
+}
+
+.rechargeOfCnt p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+.rechargeOfCnt h2 {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 3px;
+  font-weight: 600;
+  color: #333;
+}
+.rechHisId h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+.rechHisId h2 span {
+  color: #666;
+  font-weight: 400;
+}
+.rechHisId p {
+  font-weight: 500;
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+}
+.rechargeOfBlk {
+  margin-top: 10px;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 20px;
+  text-align: right;
+}
+.statusSuccess {
+  color: #28a745;
+}
+.rechHisStatus p {
+  font-size: 18px;
+  margin: 0;
+}
+.detlsInfoBlk {
+  margin-top: 25px;
+}
+.detlsInfoBlk h1 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #404040;
+}
+.detlsInfoBody {
+  margin-top: 15px;
+}
+.detlsInfoBody ul li {
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  margin-bottom: 5px;
+  padding-bottom: 0px;
+}
+.detlsInfoBody ul li span {
+  flex: 1;
+}
+.detlsInfoBody ul li b {
+  color: #333;
+}
+.modal-header.modalTitle h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.qv_index_modal .modal-body {
+    padding: 25px 30px 20px;
+    position: relative;
+}
+.selectRechargeOperatorBody.modal-body li {
+    margin-bottom: 15px;
+}
+.modal-header .h4 {
+    font-size: 18px;
+}
+
+.qv_compose_msg .modal-header {
+    background-image: linear-gradient( 170deg, rgb(89,70,224) 0%, rgb(51,141,207) 88%);
+    color: #fff;
+    padding: 20px 20px 70px;
+    border-radius: 0px 0px 30px 30px;
+}
+.qv_email_img {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -80px auto 30px;
+}
+.qv_compose_msg_body input {
+    border: 1px solid #ced4da !important;
+    padding: 20px 20px;
+    height: 45px !important;
+}
+.qv_compose_msg_body .react-tel-input {
+    margin-bottom: 30px;
+}
+.qv_compose_msg_body .react-tel-input .flag-dropdown {
+    background-color: transparent;
+}
+.qv_compose_msg_body .btn-close {
+    filter: invert(1);
+}
+.rechargeOfCnt {
+    margin-left: 10px;
+}
+.detlsInfoBody p {
+    color: #717171;
+}
+.qv_profile_saved_card {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(234, 234, 234);
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 7%);
+    padding: 15px 20px;
+}
+.qv_pay_card_info_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.qv_save_card_icon {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.qv_profile_saved_card span {
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.qv_profile_saved_dlt_sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.qv_profile_saved_dlt_sec button {
+    border: 2px solid #4d5ddb;
+    color: #4d5ddb;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+.qv_profile_saved_card span {
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.qv_profile_saved_badge span {
+    color: green;
+    background: #e6f1ea;
+    padding: 7px 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.qv_profile_saved_panel li {
+    margin-bottom: 25px;
+}
+.qv_profile_verify_txt {
+    text-align: center;
+    padding: 30px 0;
+}
+.qv_profile_verify_txt span {
+    background: #f1f1f1;
+    display: block;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    border-radius: 50%;
+    margin: 10px auto 25px;
+}
+.qv_profile_verify_txt h5 {
+    color: #333;
+    padding-bottom: 5px;
+}
+.qv_profile_verify_txt p {
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+    padding-top: 3px;
+}
+.qv_profile_verify_upload {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.profileUpdateImg::after{
+    content: url('../../assets/images/camera.webp');
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.imgUploadIcon::after{
+    content: url('../../assets/images/edit-profile-icon.webp');
+    position: absolute;
+    top: 10px;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.qvEditProfileInfo .Form-Item input {
+    max-width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid #dddddd;
+    margin: 20px auto 0px;
+    width: 100%;
+    padding: 0 10px;
+    color: black;
+    opacity: 0.6;
+}
+.qv_order_smry_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.qv_order_smry_btns .qv_operator_btn {
+    margin-left: 15px;
+}
+.qv_operator_btn2 a {
+    background-image: linear-gradient( 170deg, rgb(170,170,170) 0%, rgb(196,196,196) 88%);
+}
+.qvProfileCurrency {
+    margin-left: 5px;
+}
+
+.qvProfileCurrency.form-check.form-check-inline {
+    display: block;
+    width: 100%;
+}
+
+.qvProfileCurrency input {
+    border: 1px solid gray;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.qvProfileCurrency label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 0;
+    padding-top: 5px;
+}
+.qvProfileCurrency .form-check-inline {
+    display: flex;
+    margin-right: 0px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.qv_profile_verification_sec .qv_operator_btn {
+    margin-left: 0;
+}
+.table>:not(:first-child) {
+    border-top: 2px solid #eff6fb;
+}
+
+/* ===============Responsive CSS================ */
+@media only screen and (max-device-width: 1200px){
+    .qv_trans_type_date_btn button {
+        min-width: 120px;
+    }
+}
+
+@media only screen and (max-device-width: 992px){
+    .qvProfileWrapper {
+        margin-top: 30px;
+    }
+    .qv_trans_type_date_btn button {
+        min-width: 80px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-device-width: 768px){
+    .qvProfileBtn {
+        margin-top: 20px;
+    }
+    .qvProfileWrapper ul.nav-tabs {
+        width: 100%;
+    }
+    .qvProfileWrapper .tab-content {
+        max-width: 100%;
+        width: 100%;
+    }
+    .qvProfileWrapper {
+        display: block;
+    }
+    .qv_profile_wallet_header h2 {
+        font-size: 18px;
+    }
+    .qv_trans_type_date_btn {
+        text-align: left;
+        margin: 0px 0 0;
+    }
+    .qv_save_card_icon {
+        text-align: left;
+    }
+    .qv_profile_saved_badge {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-device-width: 567px){
+    .profileUpdateImg {
+        height: 150px !important;
+        width: 300px !important;
+    }
+}
+@media only screen and (max-device-width: 400px){
+    .profileUpdateImg {
+        height: 120px !important;
+        width: 250px !important;
+    }
+}

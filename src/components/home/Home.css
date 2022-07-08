@@ -25,7 +25,7 @@ a {
 section.IndexPageBG {
     background-image: url(../../assets/images/indexBG.webp);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     padding: 35px 0;
     position: relative;
@@ -36,7 +36,7 @@ section.IndexPageBG {
     width: 100%;
     margin: 0px auto 0;
     padding: 50px 50px;
-    overflow-x: hidden;
+    overflow-x: initial;
     position: relative;
     z-index: 17;
     border-radius: 25px;
@@ -259,6 +259,7 @@ h3.qv_heading1 {
     color: #ffffff;
     padding: 8px 40px 8px 60px;
     font-size: 12px;
+    margin: 10px;
 }
 
 .app-download-content .btn-box .play-store-btn span {
@@ -449,7 +450,7 @@ a:hover {
 }
 .homeMobileInput .react-tel-input .selected-flag {
     padding: 0 0 0 12px;
-    border-radius: 15px;
+    border-radius: 15px !important;
 }
 .react-tel-input .selected-flag .arrow {
     margin-top: -3px;
@@ -469,4 +470,72 @@ a:hover {
     display: block;
     position: relative;
     overflow: unset;
+}
+
+.animeClass {
+    transform: rotateY(180deg);
+    transition: all 0.5s linear;
+  }
+  /* .show.tooltip.bs-tooltip-bottom{
+    position: absolute;
+    left: 0 !important;
+    top: 0 !important;
+    transform: translate(10px, 132px) !important;
+  } */
+  .offerDisplayNone {
+    display: none;
+}
+.verifyCardBody {
+    text-align: center;
+}
+.verifyCardBody img {
+    max-width: 220px;
+}
+.verifyCardBody h3 {
+    margin: 15px 0 15px;
+}
+.verifyCardBody p {
+    color: #9b9b9b;
+    font-weight: 400;
+    margin-bottom: 30px;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+.verifyCardModal .btn-close {
+    filter: brightness(0.5);
+}
+.verifyCardBody input[type="text"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px 10px #f9f9f9;
+}
+button.qv_btn_link {
+    background-image: none!important;
+    color: #554dde !important;
+    padding: 0;
+    height: auto;
+    background: none;
+    border: none;
+}
+/* =============Media Query============ */
+@media only screen and (max-device-width: 767px) {
+    .qvAdvertisment {
+        margin: 59px 20px 0;
+    }
+    .title-heading {
+        font-size: 26px;
+        padding-bottom: 0px;
+    }
+    .qvIndexOperatorTypes label {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 400px) {
+    .qvIndexOperatorSec .radioPaymnt .recharge_type {
+        min-width: 230px;
+    }
 }

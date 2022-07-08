@@ -31,7 +31,7 @@ return(
 <div className="qv_recharge_wrapper">
    <Container>
       <Row>
-         <Col>
+         <Col lg="6" md="12" sm="12">
          <div className="qv_recharge_section qv_recharge_left_sec">
             <h5 className="qv_heading_two">Recharge</h5>
             <div className="qv_operator_select" onClick={SelectOperator}>
@@ -129,7 +129,7 @@ return(
          </div>
          </Col>
 
-         <Col>
+         <Col lg="6" md="12" sm="12">
          <div className="qv_recharge_section qv_recharge_right_section">
             <h5 className="qv_heading_two">My Orders</h5>
             <div className="qv_recharge_coupon_code">
@@ -207,7 +207,7 @@ return(
 </div>
 
 {/* ===========Select Operator Modal============= */}
-<Modal className="qv_index_modal .modal-body" show={selectOperator} onHide={SelectOperator}>  
+<Modal className="qv_index_modal .modal-body removeBG" show={selectOperator} onHide={SelectOperator}>  
    <Modal.Header closeButton>
       <Modal.Title>Select Operator</Modal.Title>
    </Modal.Header>
@@ -257,7 +257,7 @@ return(
 </Modal>
 
 {/* ===========Apply Coupon Modal============= */}
-      <Modal className="qv_index_modal .modal-body" show={applyCoupon} onHide={ApplyCoupon}>  
+      <Modal className="qv_index_modal .modal-body removeBG" show={applyCoupon} onHide={ApplyCoupon}>  
          <Modal.Header closeButton>
             <Modal.Title>Apply Coupon Code</Modal.Title>
          </Modal.Header>

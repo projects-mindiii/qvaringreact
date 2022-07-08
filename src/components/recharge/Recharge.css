@@ -308,3 +308,45 @@ button {
 .selectRechargeOperatorBody.modal-body li {
     margin-bottom: 25px;
 }
+
+.removeBG .modal-content:before{
+    display: none;
+}
+
+/* ============Responsive CSS========= */
+
+@media only screen and (max-device-width: 992px) {
+    .qv_recharge_section {
+        margin: 40px auto 0;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    .qv_operator_type img {
+        width: 100px;
+    }
+    .qv_recharge_left_sec .qv_operator_box:after{
+        display: none;
+    }
+    .qv_recharge_coupon_box img {
+        max-width: unset;
+    }
+}
+
+@media only screen and (max-device-width: 567px){
+    .qv_recharge_order_box h6 {
+        position: initial;
+    }
+    .qv_recharge_order_box span {
+        top: auto;
+        bottom: 10px;
+    }
+    .qv_recharge_order_box p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .qv_recharge_order_box h5, .qv_recharge_order_total h6, .qv_recharge_order_total p {
+        font-size: 16px;
+    }
+}
+

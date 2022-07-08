@@ -1,0 +1,128 @@
+.qv_add_more_card {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+.qv_add_more_card button {
+    font-size: 22px;
+    font-weight: 500;
+    color: #6265ac;
+    line-height: 0;
+}
+
+.qv_pay_card_info_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.qv_pay_card_icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+.qv_pay_card_icon span {
+    background-color: #f9f9f9;
+    margin-right: 25px;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+}
+.qv_pay_method_wrapper .recharge_type img {
+    width: 50px;
+}
+.qv_pay_card_icon i {
+    left: 70px;
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    background: #05a341;
+    padding: 3px;
+    border-radius: 50px;
+}
+.qv_pay_card_info h5 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 0;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.qv_pay_card_no p {
+    text-align: left;
+    padding: 0 0 0px;
+}
+.qv_pay_card_no span {
+    background-color: #dddbfb;
+    color: #574adf;
+}
+.qv_order_summary_wrapper {
+    text-align: center;
+}
+.qv_order_summary_wrapper p {
+    color: #a5a5a5;
+    font-size: 19px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.qv_operator_section {
+    margin-top: 22px;
+}
+.qv_pay_method_wrapper p {
+    text-align: left;
+    padding: 0 0 20px;
+    color: #4e4e4e;
+    font-size: 20px;
+}
+.qv_pay_method_wrapper .radioPaymnt .recharge_type {
+    padding: 0px 10px;
+    min-width: 90px;
+    min-height: 90px;
+    line-height: 90px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 25px 0px rgb(52 52 52 / 8%);
+    border: 1px solid #f5f5f5;
+}
+.qv_pay_method_wrapper .recharge_type img {
+    width: 50px;
+}
+.qvPaymentMethodType h3.qv_heading1 {
+    color: #6b6b6b;
+    text-align: center;
+    margin: 15px 0;
+}
+.qvOrderSummaryWrapper .qv_recharge_section {
+    padding: 30px;
+}
+.qvPayCreditCardInfo .radioPaymnt .recharge_type {
+    min-width: 670px;
+}
+i.icon-none {
+    display: none;
+}
+.qv_pay_method_wrapper {
+    margin-top: 30px;
+}
+
+/* =============Responsive CSS============= */
+
+@media only screen and (max-device-width: 992px){
+    .qvPayCreditCardInfo .radioPaymnt .recharge_type {
+        min-width: 600px;
+    }
+}
+@media only screen and (max-device-width: 767px){
+    .qvPayCreditCardInfo .radioPaymnt .recharge_type {
+        min-width: 100%;
+    }
+    .qv_operator_section h5 {
+        font-size: 22px;
+    }
+    .qv_pay_card_no p {
+        font-size: 16px;
+    }
+}

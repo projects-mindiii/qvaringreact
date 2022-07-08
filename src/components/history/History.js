@@ -17,7 +17,7 @@ return(
    <Container>
     <div className="qv_history_wrapper">
     <Tabs
-      defaultActiveKey="profile"
+      defaultActiveKey="recharge"
       id="uncontrolled-tab-example"
       className="mb-3"
     >

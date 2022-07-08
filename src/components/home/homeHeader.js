@@ -39,7 +39,7 @@ reader.readAsDataURL(file);
 return(
 <>
 <div className="qv_home_wrapper">
-   <Navbar expand="lg">
+   <Navbar expand="lg is-sticky">
       <Container>
          <Navbar.Brand href="#home"><img className="w-auto h-auto " src={Logo} /></Navbar.Brand>
          <Navbar.Toggle aria-controls="basic-navbar-nav" />

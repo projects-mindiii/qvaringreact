@@ -83,6 +83,7 @@
 .qv_history_recharge_info {
     display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .qv_history_recharge_icon {
@@ -169,4 +170,55 @@ span.success {
 }
 .qvSMSHistoryTab ul {
     margin-top: 0px;
+}
+.qv_history_recharge_box .qv_recharge_type h3 {
+    font-size: 18px !important;
+    color: #338ecf;
+}
+.qv_wallet_hstry_amt h6 {
+    font-size: 22px;
+}
+.qv_history_wallet_info {
+    align-items: center;
+    justify-content: space-between;
+}
+/* ============Responsive CSS========= */
+
+@media only screen and (max-device-width: 992px) {
+    .qv_history_wrapper {
+        margin-top: 0;
+    }
+    .qv_history_wrapper .nav-link.active:after{
+        display: none;
+    }
+    .qv_history_wrapper .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-device-width: 768px){
+    .qv_recharge_pain_amt {
+        position: initial;
+        text-align: left;
+    }
+    .qv_history_recharge_name {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-device-width: 567px){
+    .qv_recharge_type {
+        position: relative;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 430px){
+    .qv_history_sms_dlt {
+        position: initial;
+    }
+    .qv_history_recharge_info {
+        justify-content: space-between;
+    }
 }

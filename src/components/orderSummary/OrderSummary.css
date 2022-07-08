@@ -1,0 +1,40 @@
+.qvOrderSummaryWrapper .qv_recharge_section {
+    border-radius: 20px;
+    box-shadow: 0 3px 28px 0 rgb(130 130 130 / 15%);
+    max-width: 750px;
+    width: 100%;
+    margin: -120px auto 0;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+}
+
+.DeletePopupBody.modal-body {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.delete_popup_img {
+    margin-right: 15px;
+}
+
+.DeletePopupBody.modal-body h6 {
+    font-size: 20px;
+}
+.DeletePopup .modal-header {
+    padding: 20px 20px 20px;
+}
+
+/* ============= Responsive CSS ============ */
+
+@media only screen and (max-device-width: 992px){
+    .qvOrderSummaryWrapper .qv_recharge_section {
+        margin: 30px auto 0;
+    }
+}
+@media only screen and (max-device-width: 667px){
+    .apply_coupon_input input {
+        min-width: 100%;
+    }
+}

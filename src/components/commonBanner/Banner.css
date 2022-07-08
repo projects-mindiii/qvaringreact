@@ -22,3 +22,11 @@
 .qv_banner_white_box img {
     margin-top: 25px;
 }
+
+/* ============Responsive CSS========= */
+
+@media only screen and (max-device-width: 992px) {
+    .qv_banner_wrapper {
+        padding: 45px 0 45px;
+    }
+}
