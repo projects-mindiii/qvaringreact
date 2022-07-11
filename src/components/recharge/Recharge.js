@@ -18,6 +18,8 @@ import { Link } from 'react-router-dom';
 import {Container, Button, Row, Col} from 'react-bootstrap';
 import Banner from '../commonBanner/Banner.js'
 import "./Recharge.css";
+import ReactTooltip from 'react-tooltip';
+
 const Recharge = () =>{
 const [value, setValue] = useState()
 const [selectOperator, setSelectOperator] = useState(false);
@@ -92,16 +94,35 @@ return(
                      <input type="radio" name="transferClientType" value="1" className="required" />
                      <div className="recharge_type">
                         <p>Recharge <span>Recommended</span></p>
-                        <h5>Super Saving <sup data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Save 40%. Estimated arrival time 1hr or less"><i className="fas fa-info-circle"></i></sup></h5>
+                        <h5>Super Saving 
+                           <sup
+                          data-tip="Save 40%. Estimated arrival time 1hr or less"
+                          data-for="main"
+                          data-iscapture="true"
+                        >
+                           <i className="fas fa-info-circle"></i></sup></h5>
                      </div>
                   </label>
                   <label className="radioPaymnt mr-3">
                      <input type="radio" name="transferClientType" value="2" className="required" />
                      <div className="recharge_type">
                         <p>Recharge</p>
-                        <h5>Economy <sup data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Save 40%. Estimated arrival time 1hr or less"><i className="fas fa-info-circle"></i></sup></h5>
+                        <h5>Economy 
+                        <sup
+                          data-tip="Save 40%. Estimated arrival time 1hr or less"
+                          data-for="main"
+                          data-iscapture="true"
+                        >
+                           <i className="fas fa-info-circle"></i></sup></h5>
                      </div>
                   </label>
+                  <ReactTooltip
+            id="main"
+            place={"top"}
+            type={"dark"}
+            effect={"float"}
+            multiline={true}
+          />
                </div>
             </div>
             <div className="qv_recharge_all_plans qv_operator_section">

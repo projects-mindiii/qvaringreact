@@ -458,6 +458,9 @@
 .table>:not(:first-child) {
     border-top: 2px solid #eff6fb;
 }
+#panel, #flip{
+    display: none;
+}
 
 /* ===============Responsive CSS================ */
 @media only screen and (max-device-width: 1200px){

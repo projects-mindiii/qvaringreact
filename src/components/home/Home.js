@@ -13,6 +13,7 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import HomeHeader from "./homeHeader.js";
 import { HomeHelper } from "../helpers/home";
+import ReactTooltip from 'react-tooltip';
 import "./Home.css";
 const Home = () => {
   // creating a state for the section switch
@@ -83,27 +84,23 @@ const Home = () => {
                   </p>
                   <h5>
                     Super Saving
-                    <OverlayTrigger
-                      placement="bottom-start"
-                      overlay={
-                        <Tooltip id="button-tooltip-2">
-                          Check out this avatar
-                        </Tooltip>
-                      }
-                    >
-                      {({ ref, ...triggerHandler }) => (
                         <sup
-                          variant="light"
-                          {...triggerHandler}
-                          className="d-inline-flex align-items-center"
+                          data-tip="Save 40%. Estimated arrival time 1hr or less"
+                          data-for="main"
+                          data-iscapture="true"
                         >
                           <BsInfoCircleFill />
                         </sup>
-                      )}
-                    </OverlayTrigger>
                   </h5>
                 </div>
               </label>
+              <ReactTooltip
+            id="main"
+            place={"top"}
+            type={"dark"}
+            effect={"float"}
+            multiline={true}
+          />
               <label className="radioPaymnt">
                 <input
                   type="radio"
@@ -118,10 +115,9 @@ const Home = () => {
                     Economy
                     <sup
                       className="info_tooltip"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title=""
-                      data-original-title="Save 40%. Estimated arrival time 1hr or less"
+                      data-tip="Save 40%. Estimated arrival time 1hr or less"
+                      data-for="main"
+                      data-iscapture="true"
                     >
                       <BsInfoCircleFill />
                     </sup>

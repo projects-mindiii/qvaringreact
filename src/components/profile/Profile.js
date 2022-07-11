@@ -14,9 +14,12 @@ import RechargeOperator from '../../assets/images/operators/operator-icon1.webp'
 import VerifyIDIcon from '../../assets/images/verify-id.webp'
 import Table from 'react-bootstrap/Table';
 import "./Profile.css";
+import $ from 'jquery';
+
 const Profile = () =>{
     const [transDetail, setTransDetail] = useState(false);
     const [rechargeDetail, setRechargeDetail] = useState(false);
+    const [slide, setSlide] = useState(true);
     const [show, setShow] = useState(false);
     const ViewTransDetail = () => {transDetail?setTransDetail(false):setTransDetail(true)};
     const ViewRechargeDetail = () => {rechargeDetail?setRechargeDetail(false):setRechargeDetail(true)};
@@ -36,6 +39,33 @@ const Profile = () =>{
         reader.readAsDataURL(file);
       }
     };
+
+    // $(document).ready(function(){
+    //     // Slide up displayed paragraphs
+    //     $(".target").click(function(){
+    //         $("flip").slideUp();
+    //     });
+        
+    //     // Slide down hidden paragraphs
+    //     $(".target").click(function(){
+    //         $("flip").slideDown();
+    //     });
+    // });
+
+    $(document).ready(function(){
+        // Slide up displayed paragraphs
+        $(".trans_history_hide").click(function(){
+            $("#panel").slideUp();
+           setTimeout(()=>setSlide(true),100)
+        });
+        
+        // Slide down hidden paragraphs
+        $(".target").click(function(){
+            $("#flip").slideDown();
+            setTimeout(()=>setSlide(false),100)
+        });
+    });
+
 return(
 <>
 <Banner />
@@ -67,11 +97,11 @@ return(
             </div>
             <div className="qv_profile_wallet_header">
                 <h2>Transaction Hisotry</h2>
-                <span onClick={()=>setShow(!show)} className="trans_history_hide"><img src={FilterIcon} alt="" /></span>
+                <span  className={`${slide?"target":"trans_history_hide"}`}><img src={FilterIcon} alt="" /></span>
             </div>
-            {
-            show?
-                <div className="trans_history_hide_show qv_trans_type_date_wrapper">
+            {/* {
+            show? */}
+                <div id={`${slide?"flip":"panel"}`} className="trans_history_hide_show qv_trans_type_date_wrapper showHideSlider">
                     <Row>
                         <Col lg="6" md="6" sm="12">
                             <Form>
@@ -114,8 +144,8 @@ return(
                         </Col>
                     </Row>                                              
                 </div>
-            :null
-}
+            {/* :null
+} */}
             <div className="qvWalletTransitionTable">
                 <Table responsive>
                     <thead>

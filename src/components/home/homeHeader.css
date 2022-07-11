@@ -270,7 +270,9 @@ a.forgot_link {
 .react-tel-input.LoginPhoneInput .country-list {
     width: 435px;
 }
-
+.onScrolling .navMenu a.active::after{
+    display:none;
+    }
 /* ==========Responsive CSS=========== */
 
 @media screen and (max-width: 992px) {
