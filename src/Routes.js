@@ -13,6 +13,7 @@ import Profile from './components/profile/Profile.js';
 import AddMoney from './components/addMoney/AddMoney.js';
 import OrderSummary from './components/orderSummary/OrderSummary.js';
 import PaymentMethod from './components/paymentMethod/PaymentMethod.js';
+import MeetQvaring from './components/meetQvaring/MeetQvaring.js';
 import Header from './components/header/Header.js';
 
 
@@ -22,6 +23,9 @@ function routes() {
        <>       
           <Router> 
             <Route exact path="/" component={Home}></Route>
+            <Route exact path="/meet-qvaring">
+              <MeetQvaring />
+            </Route>
             <Route exact path="/recharge">
               <Header/>
               <Recharge />

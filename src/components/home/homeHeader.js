@@ -7,7 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from "react-router-dom";
 import Advertisment from '../../assets/images/loudspeaker.webp';
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "./homeHeader.css";
@@ -41,12 +41,12 @@ return(
 <div className="qv_home_wrapper">
    <Navbar expand="lg is-sticky">
       <Container>
-         <Navbar.Brand href="#home"><img className="w-auto h-auto " src={Logo} /></Navbar.Brand>
+         <Navbar.Brand exact to="/"><img className="w-auto h-auto " src={Logo} /></Navbar.Brand>
          <Navbar.Toggle aria-controls="basic-navbar-nav" />
          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto navMenu">
-               <Nav.Link className="active" exact to="/">Home</Nav.Link>
-               <Nav.Link>MEET Qvaring</Nav.Link>
+               <NavLink exact to="/">Home</NavLink>
+               <NavLink to="/meet-qvaring">MEET Qvaring</NavLink>
                <Nav.Link onClick={LoginShow}>Sign In</Nav.Link>
             </Nav>
          </Navbar.Collapse>
