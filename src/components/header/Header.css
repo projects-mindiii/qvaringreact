@@ -117,7 +117,7 @@ button#dropdown-basic {
 .navbar.is-sticky {
     position: fixed!important;
     background-image: -webkit-linear-gradient( 180deg,rgb(89,70,224) 0%,rgb(51,141,207) 88%);
-    z-index: 999;
+    z-index: 99999;
     left: 0;
     right: 0;
     top: 0;
